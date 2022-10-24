@@ -22,7 +22,7 @@ async def hello(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text(f'Hello {update.effective_user.first_name}')
 
 
-app = ApplicationBuilder().token("5408193276:AAH29vRgDIHfCbTSj5bJJw0Bq_zwdjRFNzU").build()
+app = ApplicationBuilder().token("token").build()
 
 app.add_handler(CommandHandler("add", add_list)) # не доработана функция
 app.add_handler(CommandHandler("list", list_telephone))
